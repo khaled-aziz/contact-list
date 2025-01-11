@@ -1,0 +1,94 @@
+.out-box{
+    border: 2px dotted var(--bs-secondary) ;
+}
+body>div{
+    scroll-behavior: smooth;
+}
+.letters{
+    position:fixed;
+    top: 35%;
+    right: 26%;
+    z-index: 99999;
+}
+.search input{
+    padding: 10px;
+}
+.search i{
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    transform: translate(-50%,-50%);
+    color: var(--bs-secondary);
+}
+.search input:focus +i{
+    display: none;
+}
+.add p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.add i{
+    line-height: 2;
+    font-size: 20px;
+    transition: all .5s ease;
+}
+.add .col-1:hover i{
+    font-size: 23px;
+}
+.fa-square-xmark:hover{
+    color: var(--bs-danger);
+    cursor: pointer;
+}
+.fa-square-pen:hover{
+    color: var(--bs-primary);
+    cursor: pointer;
+}
+.photo{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border:solid 3px #DADCDE ;
+}
+.m-photo{
+    width: 120px;
+    height: 120px;
+}
+.m-photo div{
+    background-color: var(--bs-secondary);
+    opacity: 0%;
+    line-height: 7.5;
+    color: aquamarine;
+}
+.add-photo:hover div{
+    opacity: 50%;
+}
+.border-bottom-only  {
+    border: none; 
+    border-bottom: 3px solid transparent; 
+    outline: none; 
+    padding:10px;
+    transition: all 0.3s ease; 
+    background: linear-gradient(to right, #C5E1D4 95%, var(--bs-primary) 5%);
+    background-size: 100% 3px; 
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: var(--bs-secondary);
+    font-size: 1.5em;
+}
+.border-bottom-only:focus{
+    background: linear-gradient(90deg , #C5E1D4 5% , var(--bs-primary) 95%);
+    background-size: 100% 3px; 
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+
+
+
+
+
+
+
+
+

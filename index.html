@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact List</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-light">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">confirmation </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    Do you want to delete the contact permanently from contact list?
+                </div>
+                <div class="modal-footer bg-light">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger confirmDelete">delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vh-100 w-50 m-auto overflow-auto">
+        <div class="my-5 out-box overflow-hidden ">
+            <div class="container cantact my-3 px-3 ">
+                <div class="letters">
+                    <div class="d-flex flex-column"></div>
+                </div>
+                <div class="row bg-secondary rounded-top p-2 bg-opacity-25">
+                    <div class="col-12">
+                        <div class="search position-relative">
+                            <input class="form-control text-center rounded-pill" placeholder="Search Contacts"
+                                type="search">
+                            <i class="fa-solid fa-magnifying-glass "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg-light add border-bottom">
+                    <div class="col-11 ">
+                        <p>Add New Contacts</p>
+                    </div>
+                    <div class="col-1 text-end ">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div class="cantact-list"></div>
+            </div>
+            <div class="container add-contact p-3 d-none">
+                <h4 class="border-3 border-bottom border-success border-opacity-25 py-3 text-secondary fw-normal">Add a
+                    New Contact</h4>
+                <div class="add-photo text-center my-5">
+                    <div class="m-photo m-auto rounded-circle my-1 position-relative">
+                        <img class="w-100 " src="image/profile image stock photo.jpg" alt="avatar">
+                        <div class="position-absolute w-100 top-0 start-0 h-100 rounded-circle">
+                            <i class="fa-solid fa-plus fa-2x"></i>
+                        </div>
+                    </div>
+                    <p class="fs-5 text-secondary ">Add Photo</p>
+                </div>
+                <div class="form">
+                    <div >
+                        <input type="text" class="w-100 my-2 border-bottom-only frist-name"  placeholder="First name" required>
+                        <div class="invalid-feedback">
+                            name shouldn't contain a special characters.
+                        </div>
+                    </div>
+                    <div >
+                        <input type="text" class="w-100 my-2 border-bottom-only last-name" placeholder="Last name" >
+                        <div class="invalid-feedback">
+                            name shouldn't contain a special characters.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <select class="phone-code border-bottom-only my-2 me-2">
+                                <option value="+1">+1 </option>
+                                <option value="+44">+44 </option>
+                                <option value="+91">+91 </option>
+                                <option value="+61">+61 </option>
+                                <option value="+81">+81 </option>
+                                <option value="+33">+33 </option>
+                                <option value="+49">+49 </option>
+                                <option value="+86">+86 </option>
+                                <option value="+55">+55 </option>
+                                <option value="+7">+7 </option>
+                                <option value="+27">+27 </option>
+                                <option value="+34">+34 </option>
+                                <option value="+39">+39 </option>
+                                <option value="+52">+52</option>
+                                <option value="+63">+63 </option>
+                                <option value="+20" selected>+20 </option>
+                                <option value="+966">+966 </option>
+                                <option value="+82">+82 </option>
+                                <option value="+62">+62 </option>
+                                <option value="+65">+65 </option>
+                                <option value="+90">+90 </option>
+                                <option value="+64">+64 </option>
+                                <option value="+353">+35</option>
+                                <option value="+45">+45 </option>
+                                <option value="+46">+46 </option>
+                                <option value="+47">+47 </option>
+                                <option value="+31">+31 </option>
+                                <option value="+41">+41 </option>
+                                <option value="+351">+35</option>
+                                <option value="+43">+43 </option>
+                                <option value="+48">+48 </option>
+                            </select>
+                        </div>
+                        <div class="col-10">
+                            <input type="text" class="w-100 my-2 border-bottom-only phone " placeholder="Phone Number" required>
+                            <div class="invalid-feedback">
+                                invalid Number.
+                            </div>
+                        </div>
+                    </div>
+                    <input type="email" class="w-100 my-2 border-bottom-only email" placeholder="Email address">
+                    <div class="invalid-feedback">
+                        incorrect Email.
+                    </div>
+                </div>
+                <div class="d-grid gap-3 col-5 mx-auto my-5">
+                    <button class="btn btn-lg btn-success add-btn" type="button" disabled>Add Contact</button>
+                    <button class="btn btn-lg btn-primary cancel" type="button">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
